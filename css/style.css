@@ -1,0 +1,412 @@
+/*
+*   Body CSS
+*/
+body
+{
+	background-color: rgb(206, 206, 206);
+	font-family: Lato, sans-serif;
+}
+
+/*-------------------------------------------------------------------------
+* Navigation CSS
+*/
+
+.navigation
+{
+	width: auto;
+	background-color: #784646;
+	display: flex;
+	justify-content: space-between;
+}
+
+.navigation img
+{
+	justify-content: flex-start;
+	padding-left: 20px;
+	height: 100px;
+}
+
+.navigation-list
+{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content:flex-end;
+	align-items: center;
+	list-style: none;
+}
+
+.navigation-list a
+{
+	height: 100%;
+	color: #fff; 
+	display: block;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	padding: 1em;
+	text-decoration: none;
+}
+
+.navigation-list a:hover
+{
+	background:#329a3b ; 
+	transition: 0.5s;   
+}
+
+#logo {
+	padding: 1em;
+}
+
+#logoText
+{
+	display: flex;
+	align-self: center;
+	height: 40px;
+}
+
+/*-------------------------------------------------------------------------
+*   About the page
+*/
+
+.info {
+	position: relative;
+	background-image: url("../Images/aboutpg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding: 5% 5% 5% 5%;
+	background-color: #04AA6D;
+}
+
+.info2 {
+	border: dotted 2px yellow;
+	text-align: center;
+	font-size: large;
+	color: yellow;
+}
+
+/*--------------------------------------------------------------------------------------
+*    Aside
+*/
+.wrapper{
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+}
+
+
+/*-------------------------------------------------------------------------------------------- 
+* Events
+*/
+.events-section {
+	background: #846f6f; 
+	padding: 2em; 
+	border: 2px solid rgb(33, 6, 6);
+}
+
+#events-carousel {
+	margin: 2em;
+	position: relative;
+	overflow: hidden;	/* hide behind rounded corners */
+	max-height: min-content;
+}
+
+.arrow-btn {
+	font-size: 1.5em;
+	padding: 0.5em;
+	border-radius: 50%;
+	border: 0 transparent;
+	color: rgba(255, 255, 255, .25);
+	background-color: rgba(127, 127, 127, 0.25);
+	margin: 1em;
+	margin-top: auto;
+	margin-bottom:auto;
+	position: absolute;
+	/* hacky way to centre vertically, without using flex */
+	top: 50%;
+	transform: translateY(-50%);
+	transition: .25s;
+}
+
+.arrow-btn:hover {
+	color: white;
+	background-color: grey;
+}
+
+.arrow-btn-left {
+	left: 5%;
+}
+.arrow-btn-right {
+	right: 5%;
+}
+
+#carousel-slides {
+	border-radius: 1em;
+	display: inline-block;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 100%;
+	max-height: min-content;
+	vertical-align: top;
+}
+
+.carousel-slide {
+	width: 100%;
+	height: auto;
+	vertical-align: top;
+}
+
+
+/*------------------------------------------------------------------------------------------
+* Recommended books
+*/
+
+.recommended-section {
+	background: #846f6f; 
+	padding: 2em; 
+	border: 2px solid rgb(33, 6, 6);
+}
+.recommended-grid {
+	display: flex;
+	flex-flow: row wrap; 
+	justify-content: center; 
+	border-radius: 5px;
+	background: #fff; 
+	gap: 1.5em; 
+	padding: 10px; 
+}
+.recommended-item {
+	background: #9898a0;
+	border-radius: 5px;
+	inline-size: min-content;
+}
+.recommended-item img {
+	width: 16em;
+	height: auto;
+}
+.recommended-content {
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-bottom: 1em;
+}
+.recommended-item img {
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.book-a-book-btn {
+	float: right;
+	margin-bottom: 1em; /* the `float` attribute makes the button ignore the parent's padding */
+	background-color: transparent;
+	border: 2px solid purple;
+	padding: 0.5em;
+	border-radius: 5px;
+	transition: 0.25s;
+}
+
+.book-a-book-btn:hover {
+	color: white;
+	background-color: purple;
+}
+
+/*------------------------------------------------------------------------------------------
+*   ContactInfo
+*/
+.contactInfo
+{
+	display: flex;
+	justify-content: space-between;
+	background-color: #784646;
+	color: #fff; 
+}
+
+.contactInfo img
+{
+	justify-content: center;
+	align-self: center;
+	height: 250px;
+	padding-right: 2em;
+}
+
+.contactInfo #contactInfoText
+{
+	align-self: center;
+	padding-left: 5em;
+	font-size: 25px;
+}
+
+.contactInfo .bottomRow
+{
+	border-bottom-style: solid;
+	border-color: #6b4b4b;
+}
+
+/*------------------------------------------------------------------------------------------
+*   Footer
+*/
+.footer1{
+	background-color: #5c1010;
+	width: 100%;
+	height: fit-content;
+	border: aqua solid 3px;
+}
+
+.box1{
+	width: 15%;
+	/*border: aqua solid 2px;*/
+	color: white;
+	background-color: #5c1010;
+	float: left;
+	padding: 2px;
+
+}
+
+.feedback{
+	width: 35%;
+	background-color: #5c1010;
+	color: white;
+	/*border: aqua solid 2px;*/
+	height: 150px;
+	float: left;
+	padding: 2px;
+}
+
+.box2{
+	width: 25%;
+	height: auto;
+	/*border: aqua solid 2px;*/
+	color: white;
+	background-color: #5c1010;
+	float: left;
+	text-align: center;
+	padding: 2px;
+}
+
+.box3{
+	width: 19%;
+	height: auto;
+	/*border: aqua solid 2px;*/
+	background-color: #5c1010;
+	float: left;
+	text-align: center;
+	padding: 2px;
+}
+
+.box3 ul{
+	list-style-type: none;
+}
+
+.box3 a{
+	color: #04AA6D;
+	text-decoration: none;
+	font-size: 24px;
+}
+
+.copyright{
+	color: wheat;
+	margin-top: 200px;
+	text-align: center;
+}
+
+/*------------------------------------------------------------------------------------------
+*   Booking cart
+*/
+
+#cart-window{
+	border-radius: 20px;
+	background-color: white;
+	position: fixed;
+	width: 33%;
+	bottom: 1em;
+	right: 1em;
+	border: 2px solid black;
+	display: none; /* initially hidden, will be shown by script */
+	overflow: auto;
+}
+
+#cart-header{
+	margin: 1em;
+}
+
+#cart-list{
+	max-height: 12em;
+	overflow: auto;
+}
+
+.cart-element {
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+/* clearfix hack
+* clear the floats,
+* ensure that element contains its floated children.
+*/
+.cart-element::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.cart-element p {
+	float: left;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.cart-element button {
+	float: right;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	background-color: transparent;
+	border: 2px solid red;
+	padding: 0.5em;
+	border-radius: 5px;
+	transition: 0.25s;
+}
+
+.cart-element button:hover {
+	color: white;
+	background-color: red;
+}
+
+
+/*----------------------------------------------------------------------------------------
+*	Responsive design
+*	Navigation & aside
+*/
+@media all and (max-width: 1400px) {
+	.navigation {
+		flex-flow: row wrap;
+		justify-content: left;
+	}
+	#logoText {
+		/* or should be hidden when not enough space? */
+	}
+}
+@media all and (max-width: 800px) {
+	.navigation-list{
+		justify-content:space-around;
+	}
+	.wrapper{
+		grid-template-columns: 1fr;
+		grid-template-rows: auto auto;
+	}
+	.main {
+		grid-row-start: 2;
+	}
+	aside {
+		grid-row-start: 1;
+	}
+	#cart-window {
+		width: 66%;
+	}
+}
+@media all and (max-width: 550px) {
+	.navigation-list{
+		flex-flow: column wrap; 
+		padding: 0;
+		margin: 0px auto;
+	}
+	#cart-window {
+		width: calc(100% - 2em);
+	}
+}

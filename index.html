@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+	<head>
+		<meta charset="utf-8">
+		<title>Book a Book</title>
+		<link rel="stylesheet" href="css/style.css" type="text/css">
+		<link rel="icon" type = "image/icon" href = "Images/favicon.ico">
+
+		<!--
+			Task 1a)
+			the <meta> tag is used to describe our website when searching for it using a web browser
+			that gives a general description of the site before visiting.
+		-->
+		<meta
+				name="description"
+				content="Our library is especially suited for students, professors and researchers. We feature all types of media, 
+								   professionally suited for academic research and learning. We also have non-academic media suited for all types
+								   of people and ages">
+
+		<!-- Importing fonts from fonts.google.com -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+		<script src="js/interactive.js" defer></script>
+	</head>
+
+	<body>
+		<section>            
+
+			<!-- This <div> is for the header -->
+			<!--
+				Task 4b)
+				<header> is used for introductionary content
+				<img> to store our homepage photo
+				We also have a paragraph that gives some information to the user about our webpage
+			-->
+			<header class="head">
+
+				<div class="navigation">
+
+					<img id="logo" src="Images/BookABook.svg">
+
+					<img id="logoText" src="Images/BookABook_TextNoBackground.png">
+
+					<ul class="navigation-list">
+
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Book a book!</a></li>
+						<li><a href="#">Discovery</a></li>
+						<li><a href="#">About us</a></li>
+						<li id="login-btn"><a href="#">Log in</a></li>
+
+					</ul>
+
+				</div>
+
+			</header>
+
+		</section>
+
+		<div class="wrapper">
+
+
+
+
+
+			<div id="main">
+
+				<div class="info">
+					<div class="info-content">
+						<fieldset class="info2">
+							<legend>
+								<h2 style="font-size: xx-large; color: skyblue; text-shadow: black 9px 9px 9px;">Welcome to Book a Book- Your Gateway to Knowledge and Imagination</h2>
+							</legend>
+
+							<p style="color: yellow; font-size: larger; text-shadow: black 7px 7px 7px;">
+							At our library, we open the doors to a world of knowledge, exploration, and endless possibilities. Our library is more than just a collection of books; it's a vibrant community hub where the love for literature, learning, and creativity converge.
+
+							<br><br>
+
+							<span style="color: skyblue; font-size: larger; text-shadow: black 10px 10px 10px;">Discover Upcoming Events: </span> <br>
+
+							Stay connected with our dynamic calendar of events, workshops, and discussions that cater to all ages and interests. Whether you're a bookworm, a history enthusiast, a tech-savvy teen, or a parent looking for family-friendly activities, you'll find something enriching to attend.
+
+							<br><br>
+
+							<span style="color: skyblue; font-size: larger; text-shadow: black 10px 10px 10px;">Explore Our Top Recommendations:</span><br>
+
+							Our dedicated team of librarians carefully curates a selection of top recommendations that are sure to pique your curiosity. From classic literature to contemporary bestsellers, our recommendations encompass a wide range of genres to captivate all tastes. Dive into our world of stories, knowledge, and adventure.
+							</p>
+						</fieldset>
+					</div>
+				</div>
+
+				<section class="events-section">
+					<h1> Upcoming Events</h1>
+					<div id="events-carousel">
+						<button class="arrow-btn arrow-btn-left">
+							<b>&nbsp&lt&nbsp</b> <!-- Translates to " < " -->
+						</button>
+						<button class="arrow-btn arrow-btn-right">
+							<b>&nbsp&gt&nbsp</b> <!-- Translates to " > " -->
+						</button>
+						<div id="carousel-slides">
+							<!-- Populated by script! -->
+						</div>
+					</div>
+				</section>
+
+				<section class="recommended-section">
+					<h1>Recommended books</h1>
+					<div class="recommended-grid">
+						<article class="recommended-item">
+							<a href="">
+								<img src="Images/covers/designs/book_cover_1.png"
+									 alt="Book cover 1">
+							</a>
+							<div class="recommended-content">
+								<a href="">
+									<h3>🕮 The Enigmatic Echoes</h3>
+								</a>
+								<div class="recommended-author">
+									<p>👤 Penelope Hawthorne</p>
+								</div>
+								<div class="recommended-categories">
+									<p><a href="genres/mystery.html">Mystery</a>, <a href="genres/thriller.html">Thriller</a>, <a href="genres/suspense">Suspense</a></p>
+								</div>
+								<button class="book-a-book-btn">Book!</button>
+							</div>
+						</article>
+
+						<article class="recommended-item">
+							<a href="">
+								<img src="Images/covers/designs/book_cover_2.png"
+									 alt="Book cover 2">
+							</a>
+							<div class="recommended-content">
+								<a href="">
+									<h3>🕮 Echoes of Elysium</h3>
+								</a>
+								<div class="recommended-author">
+									<p>👤 Victoria Sinclair</p>
+								</div>
+								<div class="recommended-categories">
+									<p><a href="genres/fantasy.html">Fantasy</a>, <a href="genres/adventure.html">Adventure</a></p>
+								</div>
+								<button class="book-a-book-btn">Book!</button>
+							</div>
+						</article>
+
+						<article class="recommended-item">
+							<a href="">
+								<img src="Images/covers/designs/book_cover_3.png"
+									 alt="Book cover 3">
+							</a>
+							<div class="recommended-content">
+								<a href="">
+									<h3>🕮 The Clockwork Chronicles</h3>
+								</a>
+								<div class="recommended-author">
+									<p>👤 Archibald Wainwright</p>
+								</div>
+								<div class="recommended-categories">
+									<p><a href="genres/steampunk.html">Steampunk</a>, <a href="genres/historical_fantasy.html">Historical Fantasy</a></p>
+								</div>
+								<button class="book-a-book-btn">Book!</button>
+							</div>
+						</article>
+
+						<article class="recommended-item">
+							<a href="">
+								<img src="Images/covers/designs/book_cover_4.png"
+									 alt="Book cover 4">
+							</a>
+							<div class="recommended-content">
+								<a href="">
+									<h3>🕮 Whispers in the Shadows</h3>
+								</a>
+								<div class="recommended-author">
+									<p>👤 Evelyn Blackwood</p>
+								</div>
+								<div class="recommended-categories">
+									<p><a href="genres/horror.html">Horror</a>, <a href="genres/supernatural.html">Supernatural</a></p>
+								</div>
+								<button class="book-a-book-btn">Book!</button>
+							</div>
+						</article>
+
+						<article class="recommended-item">
+							<a href="">
+								<img src="Images/covers/designs/book_cover_5.png"
+									 alt="Book cover 5">
+							</a>
+							<div class="recommended-content">
+								<a href="">
+									<h3>🕮 Starlight Serenade</h3>
+								</a>
+								<div class="recommended-author">
+									<p>👤 Oliver Grayson</p>
+								</div>
+								<div class="recommended-categories">
+									<p><a href="genres/romance.html">Romance</a>, <a href="genres/science_fiction.html">Science Fiction</a></p>
+								</div>
+								<button class="book-a-book-btn">Book!</button>
+							</div>
+						</article>
+
+						<article class="recommended-item">
+							<a href="">
+								<img src="Images/covers/designs/book_cover_6.png"
+									 alt="Book cover 6">
+							</a>
+							<div class="recommended-content">
+								<a href="">
+									<h3>🕮 The Culinary Conondrum</h3>
+								</a>
+								<div class="recommended-author">
+									<p>👤 Isabella Montague</p>
+								</div>
+								<div class="recommended-categories">
+									<p><a href="genres/culinary.html">Culinary</a>, <a href="genres/mistery.html">Mistery</a></p>
+								</div>
+								<button class="book-a-book-btn">Book!</button>
+							</div>
+						</article>
+
+						<article class="recommended-item">
+							<a href="">
+								<img src="Images/covers/designs/book_cover_7.png"
+									 alt="Book cover 7">
+							</a>
+							<div class="recommended-content">
+								<a href="">
+									<h3>🕮 A Song of Steel and Sorcery</h3>
+								</a>
+								<div class="recommended-author">
+									<p>👤 Cedric Ironheart</p>
+								</div>
+								<div class="recommended-categories">
+									<p><a href="genres/epic_fantasy.html">Epic Fantasy</a>, <a href="genres/sword_and_sorcery.html">Sword and Sorcery</a></p>
+								</div>
+								<button class="book-a-book-btn">Book!</button>
+							</div>
+						</article>
+
+						<article class="recommended-item">
+							<a href="">
+								<img src="Images/covers/designs/book_cover_8.png"
+									 alt="Book cover 8">
+							</a>
+							<div class="recommended-content">
+								<a href="">
+									<h3>🕮 Chronicles of the Celestial Codex</h3>
+								</a>
+								<div class="recommended-author">
+									<p>👤 Seraphina Starfall</p>
+								</div>
+								<div class="recommended-categories">
+									<p><a href="genres/science_fiction.html">Science Fiction</a>, <a href="genres/space_opera.html">Space Opera</a></p>
+								</div>
+								<button class="book-a-book-btn">Book!</button>
+							</div>
+						</article>
+
+						<article class="recommended-item">
+							<a href="">
+								<img src="Images/covers/designs/book_cover_9.png"
+									 alt="Book cover 9">
+							</a>
+							<div class="recommended-content">
+								<a href="">
+									<h3>🕮 The Forgotten Alchemy</h3>
+								</a>
+								<div class="recommended-author">
+									<p>👤 Alaric Ravenscroft</p>
+								</div>
+								<div class="recommended-categories">
+									<p><a href="genres/historical_fantasy.html">Historical Fantasy</a>, <a href="genres/mistery.html">Mistery</a></p>
+								</div>
+								<button class="book-a-book-btn">Book!</button>
+							</div>
+						</article>
+
+						<article class="recommended-item">
+							<a href="">
+								<img src="Images/covers/designs/book_cover_10.png"
+									 alt="Book cover 10">
+							</a>
+							<div class="recommended-content">
+								<a href="">
+									<h3>🕮 Whispers of Whimsy</h3>
+								</a>
+								<div class="recommended-author">
+									<p>👤 Penelope Puddlewick</p>
+								</div>
+								<div class="recommended-categories">
+									<p><a href="genres/childrens.html">Children's</a>, <a href="genres/fantasy.html">Fantasy</a></p>
+								</div>
+								<button class="book-a-book-btn">Book!</button>
+							</div>
+						</article>
+					</div>
+				</section>
+
+
+				<br>
+
+				<!-- The bottom part of the front page / home page -->
+
+				<fieldset class="contactInfo">
+
+
+
+					<table id="contactInfoText">
+
+						<tr>
+							<td>
+								Phone Number:
+							</td>
+						</tr>
+						<tr>
+							<td class="bottomRow">
+								123456789
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Address:
+							</td>
+						</tr>
+						<tr>
+							<td class="bottomRow">
+								Увс аймгийн Төв номын сан
+							</td>
+						</tr>
+
+					</table>
+
+					<img src="Images/BookABook.svg">
+
+					<!--
+						Task 4d)
+						<iframe> is used to display a web page inside another webpage.
+						In this instance we used <iframe> to display google maps to visually display
+						the address of our library
+					-->
+					<span>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d471633.11796563095!2d91.68803190376879!3d49.95031818209453!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5d49d78fa89bbbf1%3A0x8e7895f58a1a96e1!2z0KPQstGBINCw0LnQvNCz0LjQudC9INCi06nQsiDQvdC-0LzRi9C9INGB0LDQvQ!5e0!3m2!1sen!2sno!4v1694173575756!5m2!1sen!2sno" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</span>
+
+
+				</fieldset>
+
+				<section>
+					<!--This <div> is for the footer-->
+					<!--This <div> is for the footer-->
+					<footer>
+						<div class="footer1">    
+							<div class="box1">
+								<h3 style="color: yellow;">Contact Us:</h3>
+								<p>Phone nr: 123456789</p>
+								<p>Email: bookabook@fakemail.com</p>
+								<p>Post: 55690BS PostFXCapping</p>
+							</div>
+							<div class="feedback">
+								<form action="">
+									<fieldset>
+										<legend><h3 style="color: yellow;">Feedback</h3></legend>
+										<label for="select">How did you hear about us? 
+											<select name="" id="select">
+												<option value="google">Google</option>
+												<option value="facebook">Facebook</option>
+												<option value="insta">Instagram</option>
+												<option value="friends">Friends</option>
+											</select>
+										</label><br><br>
+										<label for="radio">Would you visit again?</label><br>
+										<input type="radio" name="rating" id="Yes"> Yes
+										<input type="radio" name="rating" id="No">No
+										<input type="radio" name="rating" id="Maybe">Maybe
+										<br>
+
+										<label for="Comments:"></label><br>
+										<textarea name="comments" id="" cols="30" rows="7"></textarea>
+										<br>
+										<input type="checkbox" name="check" id="check"> <label for="check"> Sign me up for email updates</label>
+										<br>
+										<label for="submit"><input type="submit" value="Sublit Review"></label>
+
+									</fieldset>
+								</form>
+								</form>
+							</div>
+
+							<div class="box2">
+								<h3 style="color: yellow;"> About Us</h3>
+								<p>All events, books, names, authors, images are generated using various AI tools.</p>
+								<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum facere corrupti itaque enim alias, reiciendis laboriosam? Molestiae provident error, ea ipsam non sit nisi, nulla quam laboriosam laborum architecto ducimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet est accusantium non, obcaecati culpa incidunt, laudantium expedita ratione nesciunt vero voluptatibus numquam quaerat ipsam exercitationem qui ducimus dicta eos quidem....<a href="https://chat.openai.com/share/40b055c1-a678-45ed-bd78-a0dff9a5443f"> Read more</a></p>
+							</div>
+
+							<div class="box3">
+								<h3 style="color: yellow;">Follow Us</h3>
+								<ul>
+									<li><a href="#insta" class="fotlink" target="_blank">Instagram </a></li>
+									<li><a href="#facebook" class="fotlink" target="_blank">Facebook</a></li>
+									<li><a href="#twitter" class="fotlink" target="_blank">Twitter</a></li>
+								</ul>
+							</div>
+
+							<br><br><br><br><br><br><br><br><br>
+							<p class="copyright">Copyright 1769-2023 © by Ådne, Omar, Tung, Aayush</p>
+						</div>
+					</footer>
+				</section>
+					</div>
+
+					<!--
+						Task 4h)
+						Included aside type content where our user can log in and create a user account.
+					-->
+					<aside>
+						<fieldset>
+							<h2>Login</h2>
+
+							<label>Username: </label>
+							<input type="text" id="username" name="username">
+							<br>
+							<label>Password: </label>
+							<input type="text" id="password" name="password">
+							<br>
+
+							<p>Not registered? <a href="signup.html">Sign up!</a>
+						</fieldset>
+					</aside>
+
+					</div>
+
+					<div id="cart-window">
+						<h3 id="cart-header">Booking books</h3>
+
+						<div id="cart-list">
+
+						</div>
+					</div>
+	</body>
+
+</html>
